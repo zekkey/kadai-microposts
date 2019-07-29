@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\User;
 use App\Micropost;
+use App\Favorite;
 
 class UsersController extends Controller
 {

@@ -7,3 +7,4 @@
     </div>
 </div>
 @include('user_follow.follow_button', ['user' => $user])
+@include('favorite_user.favorite_button', ['user' => $user])
