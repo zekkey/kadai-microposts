@@ -18,9 +18,7 @@
                 @if (count($microposts) > 0)
                     @include('microposts.microposts', ['microposts' => $microposts])
                 @endif
-                @if (count($favorites) > 0)
-                    @include('favorite_user.favorite_botton', ['favorite_user' => $favorite_botton])
-                @endif
+
             </div>
         </div>
     @else
