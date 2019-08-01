@@ -9,6 +9,11 @@
                 <div>
                     <p class="mb-0">{!! nl2br(e($micropost->content)) !!}</p>
                 </div>
+                <div class="col-sm-2">
+                   
+                    @include('favorite_user.favorite_botton', ['micropost' => $micropost])　<!-- お気に入り -->
+                </div>
+                
                 <div>
                     @if (Auth::id() == $micropost->user_id)
                         {!! Form::open(['route' => ['microposts.destroy', $micropost->id], 'method' => 'delete']) !!}
@@ -16,6 +21,7 @@
                         {!! Form::close() !!}
                     @endif
                 </div>
+                
             </div>
         </li>
     @endforeach
